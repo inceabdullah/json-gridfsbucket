@@ -7,13 +7,6 @@ Directly JSON Object to GridFSBucket. This package converts JSON object to strea
 import { connect } from 'mongoose';
 import { uploadGridFSBucket, downloadGridFSBucket } from "json-gridfsbucket"
 
-const options = {
-    user: "root",
-    pass: "example",
-    dbName: "test"
-}
-
-const mongoose = await connect('mongodb://localhost:27017', options);
 
 const _json = {
     foo: "bar",
@@ -21,6 +14,14 @@ const _json = {
 }
 
 const run = async () => {
+    const options = {
+        user: "root",
+        pass: "example",
+        dbName: "test"
+    }
+    
+    const mongoose = await connect('mongodb://localhost:27017', options);
+    
     const bucketOptions = {
         mongoose, bucketName: "bucket1", filename: "file.json"
     }

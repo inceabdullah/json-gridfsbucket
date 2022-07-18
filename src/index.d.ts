@@ -1,6 +1,6 @@
 import { Mongoose, mongo } from 'mongoose';
 declare type Db = InstanceType<typeof mongo.Db>;
-export declare const uploadGridFSBucket: (_json: JSON, options: {
+export declare const uploadGridFSBucket: (_json: {}, options: {
     mongoose: Mongoose;
     db?: Db;
     bucketName: string;

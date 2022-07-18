@@ -1,7 +1,7 @@
 {
   "name": "json-gridfsbucket",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Directly JSON Object to GridFSBucket. This package converts JSON object to streamable stringify, then pipe to GridFSBucket.",
   "main": "src/index.js",
   "dependencies": {
     "mongoose": "^6.4.4"
@@ -12,9 +12,22 @@
     "tsconfig-paths": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
   },
-  "keywords": ["mongoose, mongoDB", "GridFSBucket"],
+  "keywords": [
+    "mongoose, mongoDB",
+    "GridFSBucket"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "types": "./src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inceabdullah/json-gridfsbucket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inceabdullah/json-gridfsbucket/issues"
+  },
+  "homepage": "https://github.com/inceabdullah/json-gridfsbucket#readme"
 }
