@@ -3,7 +3,9 @@ import {Readable} from 'stream';
 
 type Db = InstanceType<typeof mongo.Db>
 
-export const uploadGridFSBucket = (_json: {}, options: {mongoose: Mongoose, db?: Db, bucketName: string, filename: string}): Promise<{bucketName: string, filename: string}|Error>  => new Promise((resolve, reject)=>{
+export type bucketOptions = {mongoose: Mongoose, db?: Db, bucketName: string, filename: string}
+
+export const uploadGridFSBucket = (_json: {}, options: bucketOptions ): Promise<{bucketName: string, filename: string}|Error>  => new Promise((resolve, reject)=>{
     const {
         mongoose,
         db,
@@ -26,7 +28,7 @@ export const uploadGridFSBucket = (_json: {}, options: {mongoose: Mongoose, db?:
       });
 })
 
-export const downloadGridFSBucket = (options: {mongoose: Mongoose, db?: Db, bucketName: string, filename: string}): Promise<JSON|Error> => new Promise((resolve, reject)=>{
+export const downloadGridFSBucket = (options: bucketOptions): Promise<JSON|Error> => new Promise((resolve, reject)=>{
   const {
     mongoose,
     db,
