@@ -1,6 +1,6 @@
 {
   "name": "json-gridfsbucket",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Directly JSON Object to GridFSBucket. This package converts JSON object to streamable stringify, then pipe to GridFSBucket.",
   "main": "src/index.js",
   "dependencies": {
@@ -16,7 +16,8 @@
     "build": "npx tsc"
   },
   "keywords": [
-    "mongoose, mongoDB",
+    "mongoose",
+    "mongoDB",
     "GridFSBucket"
   ],
   "author": "",
