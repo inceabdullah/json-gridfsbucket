@@ -1,0 +1,20 @@
+{
+  "name": "json-gridfsbucket",
+  "version": "1.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mongoose, mongoDB", "GridFSBucket"],
+  "author": "",
+  "license": "ISC"
+}
