@@ -2,6 +2,10 @@
 
 Directly JSON Object to GridFSBucket. This package converts JSON object to streamable stringify, then pipe to GridFSBucket.
 
+```
+npm i json-gridfsbucket
+```
+
 
 ```JavaScript
 import { connect } from 'mongoose';
